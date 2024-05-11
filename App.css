@@ -1,0 +1,393 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+html,body {
+  height:100%;
+}
+#root,#root2{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+#root2{
+  width: 100%;
+}
+*{
+  /* padding: 10px; */
+  margin:0;
+  /* border: solid 2px black; */
+  box-sizing: border-box;
+}
+
+.nav-wrapper{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  overflow-x: auto;
+  height: 10%;
+  min-height: 60px;
+}
+
+.navbar{
+  display: flex;
+  height: 100%;
+  background-color: #343a40;
+  min-width: 600px;
+  padding: 5px;
+}
+
+.nav-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+  padding: 5px;
+  min-width: 405px;
+}
+
+.nav-content>li{
+  text-align: center;
+  min-width: 75px;
+  background-color: #e8e8e4;
+  margin-left: 20px;
+  padding:5px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.nav-content>li:hover{
+  cursor: pointer;
+  background-color: #8e9aaf;
+  color:white;
+}
+
+.nav-content>div{
+  text-align: center;
+  padding: 5px;
+}
+
+.navbar>div{
+  font-size: 18px;
+  background-color: #fec5bb;
+  margin-top:8px;
+  margin-bottom: 8px;
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navbar>div:nth-of-type(1){
+  background-color: #e8e8e4;
+
+}
+
+.navbar>div:nth-of-type(1):hover{
+  cursor: pointer;
+  background-color: #8e9aaf;
+  color: whitesmoke;
+}
+
+.main-wrapper{
+  padding: 5px;
+  width: 100%;
+  max-width: 1900px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.main-content{
+  background-color: #E9ECEF;
+
+  flex-grow: 1;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.statement{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  width: 50%;
+}
+
+.editor{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.editor>textarea{
+  resize: none;
+  width: 100%;
+  height: 65%;
+  padding: 10px;
+  font-size: 15px;
+  background-color: #dee2e6;
+  border: solid #212529 2px;
+}
+
+.statement{
+  height: 100%;
+  padding: 20px;
+  white-space: pre-wrap;
+}
+
+
+
+.problem-page{
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  max-width: 1900px;
+  display: flex;
+  flex-direction: column;
+}
+.problem-page>h1{
+  background-color: #d8e2dc;
+  text-align: center;
+  padding:25px 0 ;
+}
+
+.problem-page>h2{
+  background-color: #d8e2dc;
+  height: 10%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.problems-wrapper{
+  background-color: #E9ECEF;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.pcard{
+  border-bottom: solid black;
+  background-color: #CED4DA;
+  font-size: 20px;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 70px;
+  height: 13%;
+  border-radius: 5px;
+  margin-top: 18px;
+  align-self: center;
+  display: flex;
+  padding :10px
+}
+
+.pcard:hover{
+  cursor: pointer;
+  background-color: #6c757d;
+  color: white;
+}
+
+.subcard{
+  background-color: #CED4DA;
+  width: 100%;
+  font-size: 18px;
+  max-width: 1200px;
+  min-height: 70px;
+  height: 13%;
+  border-radius: 5px;
+  margin-top: 18px;
+  align-self: center;
+  display: flex;
+  padding :10px
+}
+
+.subcard:hover{
+  cursor: pointer;
+  background-color: #6c757d;
+  color: white;
+}
+
+.sub-element{
+  border: solid black 2px;
+  text-align: center;
+  padding: 10px;
+  flex:1
+}
+
+.sub-element:nth-of-type(2){
+  flex: 2
+}
+
+.tag{
+  min-width: 70px;
+  text-align: center;
+  border: solid black 2px;
+  margin-right: 10px;
+  margin-left: auto;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.form-wrapper{
+  width: 100%;
+  background: linear-gradient(#e66465, #9198e5);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.form-wrapper>form{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+  
+}
+.form-wrapper>form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrapper>form>label{
+  text-align: left;
+  padding: .5rem;
+}
+
+.form-wrapper>form>input{
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.form-wrapper>form>button{
+  border: none;
+  background-color: beige;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.form-wrapper>button{
+  background: none;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+
+.output{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 35%;
+}
+
+.output>textarea,.output>p{
+  resize: none;
+  border: solid black 1px;
+  background-color: #f8f9fa;
+  display: block;
+  width: 100%;
+  height: 95%;
+}
+
+.output>textarea{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+}
+
+.output>button{
+  padding: 10px;
+}
+
+.window-btns{
+ display: flex;
+}
+
+.window-btns>button{
+  margin-left: 15px;
+  width: 25%;
+  padding: 5px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1rem
+}
+
+.submit-btns{
+  display: flex;
+}
+
+.submit-btns>button{
+  font-family:'Roboto', Courier, monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 15px;
+  padding: 5px;
+  width: 25%;
+}
+
+.ide-wrapper{
+  background-color: #E9ECEF;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ide{
+  display: flex;
+  width: 75%;
+  height: 100%;
+  flex-direction: column;
+  align-self: center;
+}
+
+.ide>textarea{
+  width: 100%;
+  height: 75%;
+}
+
+.lang{
+  font-size: 1rem;
+  padding: 8px;
+}
+
+.lang>label{
+  padding: 5px;
+}
+.lang>select{
+
+  width: 100px;
+}
+
+@media screen and (max-width: 550px) {
+  .main-content{
+    flex-direction: column;
+  }
+  .main-wrapper{
+    overflow: auto;
+  }
+  .statement{
+    width: 100%; height: 100%;
+    min-height: 50vh;
+  }
+  .editor{
+    width: 100%;
+    min-height: 40vh;
+  }
+  .editor>textarea{
+    width: 100%;
+    height: 50%;
+  }
+  .output{
+    height: 50%;
+  }
+
+  .ide>textarea{
+    height: 100%;
+  }
+}
